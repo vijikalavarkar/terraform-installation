@@ -1,35 +1,30 @@
- Update and Upgrade System Packages:
-
-Bash
 
 sudo apt-get update && sudo apt-get upgrade -y
-Install Required Packages:
 
-Bash
+
+
 
 sudo apt-get install gnupg2 software-properties-common -y
-Download and Add HashiCorp GPG Key:
 
-Bash
+
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-Add the HashiCorp APT Repository:
 
-Bash
+
+
 
 sudo add-apt-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-Update Ubuntu Package List:
 
-Bash
+
+
 
 sudo apt-get update
-Install Terraform via APT:
 
-Bash
+
 
 sudo apt-get install terraform
-Verify Installation:
 
-Bash
+
+
 
 terraform -v
