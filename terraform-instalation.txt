@@ -47,7 +47,17 @@ terraform -v
 
 
 
-
+========================================   auto fill [ use effect is usefull than storing in state] ==================================== 
+useEffect(() => {
+        if (user) {
+            setUserContact(prev => ({
+                ...prev,
+                fullname: `${user.firstname} ${user.lastname}`,
+                email: user.email,
+                phone: user.phone
+            }));
+        }
+    }, [user]);
 
 
 
