@@ -61,6 +61,13 @@ useEffect(() => {
 
 
 
+=========================== if map method problem ===============================================
+if (!Array.isArray(service)) {
+        return <p>Loading or no services available.</p>;
+    }
+
+
+
 
 
 
